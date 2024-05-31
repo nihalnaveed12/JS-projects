@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellow;
+}
+
+.main{
+    background-color: blue;
+    height: 30vh;
+    width: 30vw;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+button{
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+#p1 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+

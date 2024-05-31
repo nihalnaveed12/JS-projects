@@ -1,0 +1,55 @@
+
+let jokes = [
+    "Why don't scientists trust atoms? Because they make up everything!",
+    "What do you call fake spaghetti? An impasta!",
+    "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    "How do you organize a space party? You planet!",
+    "Why don't skeletons fight each other? They don't have the guts!",
+    "What do you call cheese that isn't yours? Nacho cheese!",
+    "Why did the tomato turn red? Because it saw the salad dressing!",
+    "What did one ocean say to the other ocean? Nothing, they just waved!",
+    "Why couldn't the bicycle stand up by itself? It was two-tired!",
+    "How does a penguin build its house? Igloos it together!",
+    "What do you get when you cross a snowman and a vampire? Frostbite!",
+    "What do you call a belt made out of watches? A waist of time!",
+    "What do you call a dinosaur with an extensive vocabulary? A thesaurus!",
+    "What do you call a cow with no legs? Ground beef!",
+    "What do you call a fish wearing a bowtie? Sophish-ticated!",
+    "Why did the tomato turn into a superhero? Because it wanted to fight crime and ketchup!",
+    "What did the duck say when it bought lipstick? 'Put it on my bill!'",
+    "How does a barber make phone calls? With a clipper!",
+    "What do you call a snowman with a six-pack? An abdominal snowman!",
+    "What do you call a bear that's stuck in the rain? A drizzly bear!",
+    "What do you call a dog magician? A labracadabrador!",
+    "Why was the math book sad? Because it had too many problems!",
+    "How do you make a tissue dance? Put a little boogey in it!",
+    "What do you call a pig that does karate? Pork chop!",
+    "What do you call a computer that sings? A dell!",
+    "Why couldn't the leopard play hide and seek? Because he was always spotted!",
+    "What do you call a factory that makes good products? A satisfactory!",
+    "Why don't oysters give to charity? Because they are shellfish!",
+    "How do you organize a space party? You planet!",
+    "What do you get when you cross a snowman and a vampire? Frostbite!",
+    "What do you call a bear with no teeth? A gummy bear!",
+    "How do you organize a space party? You planet!",
+    "What did one ocean say to the other ocean? Nothing, they just waved!",
+    "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+    "What do you call a fish wearing a bowtie? Sophish-ticated!",
+    "How does a penguin make pancakes? With its flipper!",
+    "What did the duck say when it bought lipstick? 'Put it on my bill!'",
+    "Why did the tomato turn into a superhero? Because it wanted to fight crime and ketchup!",
+    "What did one ocean say to the other ocean? Nothing, they just waved!",
+    "How does a barber make phone calls? With a clipper!",
+    "What do you call a snowman with a six-pack? An abdominal snowman!",
+    "What do you call a dinosaur with an extensive vocabulary? A thesaurus!",
+    "Why don't skeletons fight each other? They don't have the guts!",
+    "What did the ocean say to the beach? Nothing, it just waved!",
+    "Why was the belt arrested? For holding up a pair of pants!",
+    "How does a dog stop a video? It presses the paws button!"
+];
+
+function generateJoke() {
+    let result = Math.floor(Math.random() * jokes.length);
+    let getJoke = jokes[result];
+    document.getElementById("p1").innerHTML = getJoke;
+}
