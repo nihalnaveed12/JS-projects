@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width:1200px){
+  .container{
+    min-width: 50%;
+    height: auto;
+  }
+  
+  input[type = text]{
+    width: 8px;
+  }  
+
+}
+
+
+
+body {
+  background-color: blue;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+.container {
+  margin: auto;
+  width: 35%;
+  background-color: #000000;
+  margin-top: 150px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 15px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+
+
+.addTask input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+input[type="button"] {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 40px;
+  padding: 16px 50px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+}
+input[type="button"]:hover{
+  background-color: rgb(8, 66, 255);
+}
+
+
+ul li img{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+ul li img:hover{
+  height: 23px;
+  width: 23px;
+}
+
+
+
+@media only screen and (max-width:768px){
+  input[type=text]{
+    width: 5px;
+    height: 2px;
+  }
+  input[type=button]{
+    width: 5px;
+    height: 2px;
+    padding-top: 4px;
+    padding-left: 20px;
+    font-size: smaller;
+  }
+
+  .addTask{
+    margin: 8px;
+    padding-left: 4px;
+  }
+  .container h1{
+    font-size:large;
+  }
+}
+
