@@ -1,21 +1,7 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
-
-@media only screen and (max-width:1200px){
-  .container{
-    min-width: 50%;
-    height: auto;
-  }
-  
-  input[type = text]{
-    width: 8px;
-  }  
-
-}
-
-
 
 body {
   background-color: blue;
@@ -103,7 +89,17 @@ ul li img:hover{
   width: 23px;
 }
 
+@media only screen and (max-width:1200px){
+  .container{
+    min-width: 50%;
+    height: auto;
+  }
+  
+  input[type = text]{
+    width: 8px;
+  }  
 
+}
 
 @media only screen and (max-width:768px){
   input[type=text]{

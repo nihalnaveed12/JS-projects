@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="input">
+        <input type="text" id="inputBox" disabled />
+        <span class="material-symbols-outlined" id="copy" onclick="copyPass()">
+          content_copy
+          </span>
+      </div>
+      <div class="range">
+        <input
+          type="range"
+          oninput="rangeValue.innerText = len.value"
+          name="length"
+          id="len"
+          max="20"
+          min="6"
+          value="12" 
+        />
+        <div class="passlen">
+          <span>Password Length</span>
+          <span id="rangeValue">12</span> <!-- added default value -->
+        </div>
+      </div>
+      <div class="options">
+        <div class="opt opt1">
+          <p>Include Symbols (@$&*)</p>
+          <input type="checkbox" id="symbols" />
+        </div>
+        <div class="opt opt2">
+          <p>Include Numbers</p>
+          <input type="checkbox" id="numbers" />
+        </div>
+        <div class="opt opt3">
+          <p>Include Lower Case Letters</p>
+          <input type="checkbox" id="lowerCase" />
+        </div>
+        <div class="opt opt4">
+          <p>Include Upper Case Letters</p>
+          <input type="checkbox" id="upperCase" />
+        </div>
+      </div>
+      <div class="btn">
+        <button id="btn1" onclick="inputBox.value = generatePassword()">Generate Password</button>
+      </div>
+    </div>
+    <script src="script.js"></script> 
+  </body>
+</html>
